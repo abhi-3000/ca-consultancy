@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark-primary: #0f2027;
+  --color-dark-secondary: #2c5364;
+  --color-light-primary: #ffffff;
+  --color-light-secondary: #9CA3AF;
+  --color-accent-blue: #38bdf8;
+
+  --font-poppins: "Poppins", sans-serif;
+  --font-inter: "Inter", sans-serif;
+
+  --animate-infinite-scroll: infinite-scroll 25s linear infinite;
+  --animate-infinite-scroll-reverse: infinite-scroll-reverse 25s linear infinite;
+
+  @keyframes infinite-scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+  }
+  @keyframes infinite-scroll-reverse {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+  }
+}
+
+/* 3 Complimentary Shade
+#27160f – Dark Mahogany Brown
+
+#642f2c – Deep Chestnut Red
+
+#c47a64 – Muted Terra Cotta
+
+🎨 3 Similar Shades
+
+#1b3a4b – Dark Slate Blue
+
+#234e63 – Deep Sea Blue
+
+#132c33 – Charcoal Teal
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @import "tailwindcss";
+
+@theme {
+  --color-dark-primary: #0f2027;
+  --color-dark-secondary: #2c5364;
+  --color-light-primary: #ffffff;
+  --color-light-secondary: #dcdcdc;
+
+  --font-poppins: "Poppins", sans-serif;
+  --font-inter: "Inter", sans-serif;
+} */

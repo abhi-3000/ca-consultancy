@@ -1,0 +1,4 @@
+# .gitignore file in CA/backend
+
+node_modules
+.env
