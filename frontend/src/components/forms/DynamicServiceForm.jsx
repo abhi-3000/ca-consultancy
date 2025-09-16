@@ -27,14 +27,17 @@ const DynamicServiceForm = ({ service }) => {
     try {
       const token = await getToken();
 
-      const response = await fetch("http://localhost:5000/api/requests", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`,
-        },
-        body: JSON.stringify({ serviceId: service._id, formData: textData }),
-      });
+      const response = await fetch(
+        "https://ca-consultancy.onrender.com/api/requests",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+          body: JSON.stringify({ serviceId: service._id, formData: textData }),
+        }
+      );
 
       if (!response.ok)
         throw new Error("Failed to create the service request.");
@@ -48,7 +51,7 @@ const DynamicServiceForm = ({ service }) => {
           const formData = new FormData();
           formData.append("document", file);
           return fetch(
-            `http://localhost:5000/api/requests/${requestId}/upload`,
+            `https://ca-consultancy.onrender.com/api/requests/${requestId}/upload`,
             {
               method: "POST",
               headers: { Authorization: `Bearer ${token}` },

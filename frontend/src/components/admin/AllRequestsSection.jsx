@@ -14,7 +14,7 @@ const StatusUpdater = ({ request, onUpdate }) => {
     try {
       const token = await getToken();
       const response = await fetch(
-        `http://localhost:5000/api/admin/requests/${request._id}/status`,
+        `https://ca-consultancy.onrender.com/api/admin/requests/${request._id}/status`,
         {
           method: "PUT",
           headers: {
@@ -58,7 +58,7 @@ const InvoiceForm = ({ request, onUpdate }) => {
       const formData = new FormData();
       formData.append("amount", amount);
       const response = await fetch(
-        `http://localhost:5000/api/admin/requests/${request._id}/invoice`,
+        `https://ca-consultancy.onrender.com/api/admin/requests/${request._id}/invoice`,
         {
           method: "PUT",
           headers: { Authorization: `Bearer ${token}` },
@@ -117,7 +117,7 @@ const AdminFileUpload = ({ request, onUpdate }) => {
       const formData = new FormData();
       formData.append("document", file);
       const response = await fetch(
-        `http://localhost:5000/api/admin/requests/${request._id}/upload`,
+        `https://ca-consultancy.onrender.com/api/admin/requests/${request._id}/upload`,
         {
           method: "POST",
           headers: { Authorization: `Bearer ${token}` },

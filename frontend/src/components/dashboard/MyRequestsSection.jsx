@@ -16,7 +16,7 @@ const FileUpload = ({ requestId, onUploadSuccess }) => {
       const formData = new FormData();
       formData.append("document", file);
       const response = await fetch(
-        `http://localhost:5000/api/requests/${requestId}/upload`,
+        `https://ca-consultancy.onrender.com/api/requests/${requestId}/upload`,
         {
           method: "POST",
           headers: { Authorization: `Bearer ${token}` },
@@ -79,7 +79,7 @@ const PaymentButton = ({ request, onPaymentSuccess }) => {
     try {
       const token = await getToken();
       const orderResponse = await fetch(
-        "http://localhost:5000/api/payments/create-order",
+        "https://ca-consultancy.onrender.com/api/payments/create-order",
         {
           method: "POST",
           headers: {
@@ -105,7 +105,7 @@ const PaymentButton = ({ request, onPaymentSuccess }) => {
         order_id: order.id,
         handler: async (response) => {
           const verifyResponse = await fetch(
-            "http://localhost:5000/api/payments/verify",
+            "https://ca-consultancy.onrender.com/api/payments/verify",
             {
               method: "POST",
               headers: {

@@ -25,7 +25,7 @@ const ClientDashboard = () => {
       try {
         const token = await getToken();
         const response = await fetch(
-          "http://localhost:5000/api/requests/my-requests",
+          "https://ca-consultancy.onrender.com/api/requests/my-requests",
           {
             headers: { Authorization: `Bearer ${token}` },
           }

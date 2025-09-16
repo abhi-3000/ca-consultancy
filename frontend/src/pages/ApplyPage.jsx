@@ -20,7 +20,7 @@ const ApplyPage = () => {
       const fetchService = async () => {
         try {
           const response = await fetch(
-            `http://localhost:5000/api/services/${id}`
+            `https://ca-consultancy.onrender.com/api/services/${id}`
           );
           if (!response.ok)
             throw new Error("Service data could not be fetched.");

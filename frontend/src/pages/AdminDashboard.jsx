@@ -23,7 +23,7 @@ const AdminDashboard = () => {
       try {
         const token = await getToken();
         const response = await fetch(
-          "http://localhost:5000/api/admin/requests",
+          "https://ca-consultancy.onrender.com/api/admin/requests",
           {
             headers: { Authorization: `Bearer ${token}` },
           }

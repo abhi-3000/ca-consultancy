@@ -20,7 +20,7 @@ const ServiceDetailPage = () => {
       try {
         // We'll need a new backend endpoint for this: /api/services/:id
         const response = await fetch(
-          `http://localhost:5000/api/services/${id}`
+          `https://ca-consultancy.onrender.com/api/services/${id}`
         );
         if (!response.ok) {
           throw new Error("Service not found.");
