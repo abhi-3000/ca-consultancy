@@ -1,10 +1,11 @@
 # 📊 CA Consultancy Platform  
+![Banner](./screenshots/NK-banner.png)
 
 *A full-stack MERN application designed to digitalize my father's traditional Chartered Accountancy practice, for remote Chartered Accountancy services, client onboarding, and taxation management, replacing high-friction manual workflows with a seamless, modern, and transparent service delivery platform*  
 *This project is a complete, end-to-end solution that handles everything from initial service discovery to secure document exchange and online payments, all wrapped in a premium, futuristic user interface.*
 
 
-![Banner](./screenshots/banner.png)
+
 
 ---
 
@@ -47,12 +48,28 @@
 🔗 [Live Demo](https://nk-zeta-fawn.vercel.app/)  
 
 ### Screenshots  
-![Homepage Screenshot](./screenshots/homepage.png)  
-![Dashboard Screenshot](./screenshots/dashboard.png)  
+![Homepage Screenshot1](./screenshots/homepage1.png) 
+![Homepage Screenshot2](./screenshots/homepage2.png)
+
+*How it works :*
+![Homepage Screenshot2](./screenshots/how-it-works.png)
+*Services :*
+![Services Screenshot1](./screenshots/services.png) 
+
+*Client :*
+![Client Screenshot](./screenshots/client1.png)
+![Client Screenshot](./screenshots/client2.png)
+![Client Screenshot](./screenshots/client3.png)
+
+*Admin :*
+![Admin Screenshot](./screenshots/admin1.png)
+![Admin Screenshot](./screenshots/admin2.png)
+![Admin Screenshot](./screenshots/admin3.png)
+![Admin Screenshot](./screenshots/admin4.png)
+
 
 ---
 
-## 🛠 Tech Stack  
 
 ## 🛠 Tech Stack  
 
